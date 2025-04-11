@@ -1,0 +1,5 @@
+ venv_merge_pdfs/
+__pycache__/
+*.pyc
+.vscode/
+.DS_Store
