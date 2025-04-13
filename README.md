@@ -4,9 +4,10 @@ A simple Python project to merge multiple PDF files into one.
 
 ## Features
 
-- Merge multiple PDF files into a single file
-- Optionally insert a PDF into a specific position within another
-- Ideal for organizing and combining documents
+- Automatically scans the `pdfs/` folder for PDF files
+- Merges multiple PDF files into a single file
+- Outputs the result to the `merged/` folder as `result.pdf`
+- Skips merge and exits quietly if no PDFs are found
 
 ## Setup Instructions
 
@@ -41,7 +42,7 @@ Place all the PDF files you want to work with inside the `pdfs/` folder.
 python merge.py
 ```
 
-Modify the logic in `merge.py` according to how you want to merge or insert PDFs.
+If there are PDF files in the folder, a `merged/result.pdf` will be created.
 
 ## Project Structure
 
@@ -49,9 +50,11 @@ Modify the logic in `merge.py` according to how you want to merge or insert PDFs
 pdf-merger/
 ├── venv/               # Virtual environment (ignored by Git)
 ├── pdfs/               # Folder with input PDF files
-├── merge.py            # Your main Python script
-├── requirements.txt    # Python package requirements
-├── .gitignore          # Files and folders Git should ignore
+│   └── .gitkeep        # Placeholder to track folder in Git
+├── merged/             # Output folder (created if PDFs are found)
+├── merge.py            # Python script that performs the merge
+├── requirements.txt    # Project dependencies
+├── .gitignore          # Git ignore rules
 └── README.md           # Project documentation
 ```
 
@@ -62,6 +65,8 @@ pdf-merger/
 ## Notes
 
 - Make sure to activate your virtual environment every time you start working.
+- The script will not create any output unless valid PDF files are found.
+- The `merged/` folder is created only when needed.
 - `venv/` is excluded from version control using `.gitignore`.
 
 ## License
