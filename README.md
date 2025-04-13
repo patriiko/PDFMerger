@@ -1,14 +1,14 @@
-# 📄 PDF Merger
+# PDF Merger
 
 A simple Python project to merge multiple PDF files into one.
 
-## 🚀 Features
+## Features
 
 - Merge multiple PDF files into a single file
 - Optionally insert a PDF into a specific position within another
 - Ideal for organizing and combining documents
 
-## 🛠 Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the repository
 
@@ -43,7 +43,7 @@ python merge.py
 
 Modify the logic in `merge.py` according to how you want to merge or insert PDFs.
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 pdf-merger/
@@ -55,15 +55,15 @@ pdf-merger/
 └── README.md           # Project documentation
 ```
 
-## 🧩 Dependencies
+## Dependencies
 
 - PyPDF2
 
-## ⚠️ Notes
+## Notes
 
 - Make sure to activate your virtual environment every time you start working.
 - `venv/` is excluded from version control using `.gitignore`.
 
-## 📬 License
+## License
 
 MIT License
