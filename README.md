@@ -72,3 +72,7 @@ pdf-merger/
 ## License
 
 MIT License
+
+## Contributing
+
+Contribute by forking the repo and opening pull requests.
